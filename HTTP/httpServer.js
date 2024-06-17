@@ -1,7 +1,7 @@
 const http = require("http");
 
 const server = http.createServer((request, response) => {
-    const textToSend = "Houston, HTTPS is online.";
+    const textToSend = "Houston, HTTP is online.";
 
     response.writeHead(200, {
         'content-length': Buffer.byteLength(textToSend),
